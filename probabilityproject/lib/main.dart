@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
 
   String _recommendation = "";
   int downloadsVal = 0; 
-  int ratingVal = 0;
+  double ratingVal = 0;
   int ratingSumVal = 0;
   double probabilityVal = 0;
 
@@ -94,7 +94,7 @@ class HomePage extends StatelessWidget {
                     icon: Icon(Icons.rate_review, color: Colors.white),
                     hintText: "Enter Ratings",
                   ),
-                   onChanged: (String text) => ratingVal = int.parse(text),
+                   onChanged: (String text) => ratingVal = double.parse(text),
                 ),
               ),
 
